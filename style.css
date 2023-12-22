@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+/* when use id # and when use class use . */
+#video-background{
+    position:fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.hidden-text{
+    display: none;
+}
+
+#ask{
+    font-family: comfortaa;
+    position: fixed;
+    top: 25%;
+    right: 33%;
+    color: pink;
+}
+
+
+
+.button1{
+    display: none;
+    font-family: comfortaa;
+    display: inline-block;
+    padding: 10px 20px;
+    position: fixed;
+    top: 35%;
+    right: 55%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: lightpink;
+    background-color: lightpink; 
+    color: #fff; /* White text */
+    border: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button2{
+    display: none;
+    font-family: comfortaa;
+    display: inline-block;
+    padding: 10px 20px;
+    position: fixed;
+    top: 35%;
+    right: 40%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: lightpink;
+    background-color: lightpink; 
+    color: #fff; /* White text */
+    border: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+    transition: all 0.7s ease;
+    width: 2em;
+    height: 1em; 
+}
+
+
+.next{
+    display: none;
+    font-family: comfortaa;
+    font-size: larger;
+    position: fixed;
+    top: 25%;
+    right: 44%;
+    color: white;
+}
+
+.new-video{
+    position:fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
