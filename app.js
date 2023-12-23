@@ -72,10 +72,13 @@ window.addEventListener('beforeunload', function () {
     video.load();
 });
 
-window.onload= function(){
-    video.play();
+// window.onload= function(){
+//     video.play();
+// }
+function playvid1(){
+    video.play()
+    document.querySelector('.message').classList.add('hidden-text')
 }
-
 video.addEventListener('ended', function () {
     video.pause();
     ask.classList.remove('hidden-text');
