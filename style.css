@@ -94,3 +94,20 @@ body{
     object-fit: cover;
     z-index: -1;
 }
+.message{
+    font-family: comfortaa;
+    font-size: larger;
+    position: fixed;
+    top: 25%;
+    right: 44%;
+    color: white;
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}

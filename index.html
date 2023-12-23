@@ -13,7 +13,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
 
 <body>
-    <video id="video-background" preload="auto" autoplay src="./elements/x2mate.com-You make my heart go-(1080p).mp4"></video>
+    <div class="message">
+        <h1>Tap to Play</h1>
+    </div>
+    <video id="video-background" preload="auto" onclick="playvid1()">
+        <source src="./elements/x2mate.com-You make my heart go-(1080p).mp4" type="video/mp4">
+    </video>
     <!-- <video id="video-background" preload="auto" autoplay src="x2mate.com-You make my heart go-(1080p).mp4"></video> -->
     <!-- id end text class same -->
     <div id="ask" class="hidden-text">
@@ -26,10 +31,12 @@
     
     <div id="vid" class="next">
         <h1 id="overlayText">Yeeeyyyyy!!!</h1>
-        <video id ="overlayVideo" class="new-video" preload="auto" src="./elements/NewY2meta.app-Come sit with me-(1080p).mp4"></video>
-        <!-- <video id ="overlayVideo" class="new-video" preload="auto" src="NewY2meta.app-Come sit with me-(1080p).mp4"></video> -->
+        <video id ="overlayVideo" class="new-video" preload="auto" >
+            <source src="./elements/NewY2meta.app-Come sit with me-(1080p).mp4" type="video/mp4">
+        </video>
+        <video id ="overlayVideo" class="new-video" preload="auto" src="NewY2meta.app-Come sit with me-(1080p).mp4"></video> 
 
-    </div>
+    </div> 
 
 
 
