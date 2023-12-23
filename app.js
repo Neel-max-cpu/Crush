@@ -53,8 +53,10 @@ console.log("hello world");
 
 const video = document.getElementById('video-background');
 const ask = document.getElementById('ask');
-let button1, button2; // Declare the variables here
+let button1
+let button2 // Declare the variables here
 const vidDiv = document.getElementById('vid');
+
 
 document.addEventListener('DOMContentLoaded', function() {
     button1 = document.querySelector('.button1'); // Initialize the variables within the DOMContentLoaded event
@@ -66,13 +68,17 @@ document.addEventListener('DOMContentLoaded', function() {
     button2.addEventListener('mouseover', moveButton);
 });
 
+window.addEventListener('beforeunload', function () {
+    video.load();
+});
+
+window.onload= function(){
+    video.play();
+}
+
 video.addEventListener('ended', function () {
     video.pause();
     ask.classList.remove('hidden-text');
-});
-
-window.addEventListener('beforeunload', function () {
-    video.load();
 });
 
 function moveButton() {
