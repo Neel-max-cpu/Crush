@@ -97,7 +97,7 @@ function playvideo() {
     const overlayVideo = document.getElementById('overlayVideo');
     const overlayText = document.getElementById('overlayText');
 
-    overlayVideo.src = "/elements/NewY2meta.app-Come sit with me-(1080p).mp4";
+    overlayVideo.src = "./elements/NewY2meta.app-Come sit with me-(1080p).mp4";
 
     overlayVideo.load();
     overlayVideo.play();
