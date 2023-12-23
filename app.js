@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
     button2 = document.querySelector('.button2');
 
     // Attach event listeners or perform other tasks here
+
+    // however option
+    button2.addEventListener('mouseover', moveButton);
 });
 
 video.addEventListener('ended', function () {
